@@ -12,6 +12,81 @@ I care about how software works internally, not just whether it works.
 
 ---
 
+## Featured Project
+
+### CodeIndex
+
+[![NuGet](https://img.shields.io/nuget/v/cdidx?label=cdidx&color=004880)](https://www.nuget.org/packages/cdidx)
+
+A CLI tool that indexes large codebases into a SQLite database for fast search — designed for both humans and AI agents.
+
+- SQLite + FTS5 full-text search for instant code search
+- Symbol extraction — functions, classes, imports as structured data
+- Incremental indexing — only re-indexes changed files
+- 25+ languages supported (C#, Python, TypeScript, Go, Rust, Java, etc.)
+- MCP server for AI tools (Claude Code, Cursor, Windsurf, GitHub Copilot)
+- JSON output for programmatic access
+
+```
+dotnet tool install -g cdidx
+```
+
+🔗 https://github.com/Widthdom/CodeIndex
+
+---
+
+## NuGet Packages
+
+| Package | Version | Description |
+|---------|---------|-------------|
+| [cdidx](https://www.nuget.org/packages/cdidx) | [![NuGet](https://img.shields.io/nuget/v/cdidx?style=flat&color=004880)](https://www.nuget.org/packages/cdidx) | Code indexing & search CLI tool |
+| [nildiff](https://www.nuget.org/packages/nildiff) | [![NuGet](https://img.shields.io/nuget/v/nildiff?style=flat&color=004880)](https://www.nuget.org/packages/nildiff) | Folder diff & release validation CLI tool |
+| [FolderDiffIL4DotNet.Core](https://www.nuget.org/packages/FolderDiffIL4DotNet.Core) | [![NuGet](https://img.shields.io/nuget/v/FolderDiffIL4DotNet.Core?style=flat&color=004880)](https://www.nuget.org/packages/FolderDiffIL4DotNet.Core) | Core library — file comparison, Myers diff, PE/CLR detection |
+| [FolderDiffIL4DotNet.Plugin.Abstractions](https://www.nuget.org/packages/FolderDiffIL4DotNet.Plugin.Abstractions) | [![NuGet](https://img.shields.io/nuget/v/FolderDiffIL4DotNet.Plugin.Abstractions?style=flat&color=004880)](https://www.nuget.org/packages/FolderDiffIL4DotNet.Plugin.Abstractions) | Plugin contracts for extending FolderDiffIL4DotNet |
+
+---
+
+## Projects
+
+### FolderDiffIL4DotNet
+
+A tool for comparing folders with IL-level .NET assembly analysis and structured diff reporting.
+
+- IL-level comparison — filters out MVID, timestamps, and other build noise
+- Multi-format output: Markdown, interactive HTML with sign-off workflow, JSON audit logs
+- Semantic change detection: method/type additions, signature changes, access level modifications
+- Plugin architecture for custom report formats, disassemblers, and hooks
+
+```
+dotnet tool install -g nildiff
+```
+
+🔗 https://github.com/Widthdom/FolderDiffIL4DotNet
+
+---
+
+### Praxis
+A cross-platform launcher application for macOS and Windows.
+
+- Quickly launch applications and workflows
+- Designed for simplicity and minimal interaction
+- Focus on predictable behavior and clean user experience
+
+🔗 https://github.com/Widthdom/Praxis
+
+---
+
+### ubuntu-setup
+Setup scripts and notes for configuring a Linux development environment.
+
+- Environment initialization
+- Tooling and configuration
+- Reproducible setup process
+
+🔗 https://github.com/Widthdom/ubuntu-setup
+
+---
+
 ## Engineering Style
 
 - Write clean and maintainable code
@@ -21,21 +96,12 @@ I care about how software works internally, not just whether it works.
 
 ---
 
-## What I Enjoy
-
-- Debugging and root cause analysis
-- Refining logic until it becomes simple and correct
-- Improving reliability through structure and tooling
-- Turning unclear problems into well-defined systems
-
----
-
 ## Current Focus
 
+- Developer tooling and CLI design
 - CI/CD and build pipeline design
 - Static analysis and code quality improvement
 - Linux fundamentals and system-level understanding
-- Building controlled and reproducible environments
 
 ---
 
@@ -66,6 +132,7 @@ I care about how software works internally, not just whether it works.
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
 ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=gitlab&logoColor=white)
+![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)
 
 ### Environment
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)
@@ -74,49 +141,3 @@ I care about how software works internally, not just whether it works.
 
 ### Mobile
 ![iOS](https://img.shields.io/badge/iOS-000000?style=flat&logo=apple&logoColor=white)
-
----
-
-## Projects
-
-### 🔹 FolderDiffIL4DotNet
-A tool for comparing .NET assemblies at the IL (Intermediate Language) level.
-
-- Disassembles assemblies into IL for comparison
-- Ignores non-essential differences such as build timestamps
-- Focuses on determining whether binaries are *essentially identical*
-- Designed for precise and reproducible comparison
-
-🔗 https://github.com/Widthdom/FolderDiffIL4DotNet
-
----
-
-### 🔹 Praxis
-A cross-platform launcher application for macOS and Windows.
-
-- Quickly launch applications and workflows
-- Designed for simplicity and minimal interaction
-- Focus on predictable behavior and clean user experience
-
-🔗 https://github.com/Widthdom/Praxis
-
----
-
-### 🔹 ubuntu-setup
-Setup scripts and notes for configuring a Linux development environment.
-
-- Environment initialization
-- Tooling and configuration
-- Reproducible setup process
-
-🔗 https://github.com/Widthdom/ubuntu-setup
-
----
-
-## Approach to Work
-
-I focus on what I do best:
-
-- writing precise code
-- understanding systems
-- improving quality through structure
