@@ -16,8 +16,6 @@ I care about how software works internally, not just whether it works.
 
 ### CodeIndex
 
-[![NuGet](https://img.shields.io/nuget/v/cdidx?label=cdidx&color=004880)](https://www.nuget.org/packages/cdidx)
-
 A CLI tool that indexes large codebases into a SQLite database for fast search — designed for both humans and AI agents.
 
 - SQLite + FTS5 full-text search for instant code search
@@ -37,12 +35,12 @@ dotnet tool install -g cdidx
 
 ## NuGet Packages
 
-| Package | Version | Description |
-|---------|---------|-------------|
-| [cdidx](https://www.nuget.org/packages/cdidx) | [![NuGet](https://img.shields.io/nuget/v/cdidx?style=flat&color=004880)](https://www.nuget.org/packages/cdidx) | Code indexing & search CLI tool |
-| [nildiff](https://www.nuget.org/packages/nildiff) | [![NuGet](https://img.shields.io/nuget/v/nildiff?style=flat&color=004880)](https://www.nuget.org/packages/nildiff) | Folder diff & release validation CLI tool |
-| [FolderDiffIL4DotNet.Core](https://www.nuget.org/packages/FolderDiffIL4DotNet.Core) | [![NuGet](https://img.shields.io/nuget/v/FolderDiffIL4DotNet.Core?style=flat&color=004880)](https://www.nuget.org/packages/FolderDiffIL4DotNet.Core) | Core library — file comparison, Myers diff, PE/CLR detection |
-| [FolderDiffIL4DotNet.Plugin.Abstractions](https://www.nuget.org/packages/FolderDiffIL4DotNet.Plugin.Abstractions) | [![NuGet](https://img.shields.io/nuget/v/FolderDiffIL4DotNet.Plugin.Abstractions?style=flat&color=004880)](https://www.nuget.org/packages/FolderDiffIL4DotNet.Plugin.Abstractions) | Plugin contracts for extending FolderDiffIL4DotNet |
+| Package | Description |
+|---------|-------------|
+| [cdidx](https://www.nuget.org/packages/cdidx) | Code indexing & search CLI tool |
+| [nildiff](https://www.nuget.org/packages/nildiff) | Folder diff & release validation CLI tool |
+| [FolderDiffIL4DotNet.Core](https://www.nuget.org/packages/FolderDiffIL4DotNet.Core) | Core library — file comparison, Myers diff, PE/CLR detection |
+| [FolderDiffIL4DotNet.Plugin.Abstractions](https://www.nuget.org/packages/FolderDiffIL4DotNet.Plugin.Abstractions) | Plugin contracts for extending FolderDiffIL4DotNet |
 
 ---
 
