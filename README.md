@@ -6,15 +6,15 @@
 
 ## About
 
-I focus on building systems that behave predictably and are easy to reason about.
+I build developer tools and desktop software with an emphasis on predictable behavior, inspectable output, and clear operational boundaries.
 
-I care about how software works internally, not just whether it works.
+Current work centers on code intelligence, release validation, and cross-platform launcher UX.
 
 ---
 
-## Featured Project
+## Featured Projects
 
-### CodeIndex
+### CodeIndex / cdidx
 
 A CLI tool that indexes large codebases into a SQLite database for fast search — designed for both humans and AI agents.
 
@@ -33,6 +33,23 @@ dotnet tool install -g cdidx
 
 ---
 
+### FolderDiffIL4DotNet / nildiff
+
+A .NET global tool for comparing old/new build folders and producing review artifacts for release validation.
+
+- Reduces false positives from .NET assembly metadata noise such as MVIDs and timestamps
+- Generates Markdown, standalone interactive HTML, and JSON audit reports
+- Supports semantic .NET change tables, integrity checks, review notes, and archived sign-off flows
+- Designed to stay self-contained and offline-friendly for release review
+
+```
+dotnet tool install -g nildiff
+```
+
+🔗 https://github.com/Widthdom/FolderDiffIL4DotNet
+
+---
+
 ## NuGet Packages
 
 | Package | Description |
@@ -46,29 +63,12 @@ dotnet tool install -g cdidx
 
 ## Projects
 
-### FolderDiffIL4DotNet
-
-A tool for comparing folders with IL-level .NET assembly analysis and structured diff reporting.
-
-- IL-level comparison — filters out MVID, timestamps, and other build noise
-- Multi-format output: Markdown, interactive HTML with sign-off workflow, JSON audit logs
-- Semantic change detection: method/type additions, signature changes, access level modifications
-- Plugin architecture for custom report formats, disassemblers, and hooks
-
-```
-dotnet tool install -g nildiff
-```
-
-🔗 https://github.com/Widthdom/FolderDiffIL4DotNet
-
----
-
 ### Praxis
-A cross-platform launcher application for macOS and Windows.
+A cross-platform desktop launcher built with Avalonia and .NET.
 
-- Quickly launch applications and workflows
-- Designed for simplicity and minimal interaction
-- Focus on predictable behavior and clean user experience
+- Command execution, search, suggestions, and quick launcher workflows
+- Free-positioned launcher buttons, recent Dock, launch logging, and button editing
+- SQLite-backed persistence with migration support for existing launcher databases
 
 🔗 https://github.com/Widthdom/Praxis
 
@@ -97,9 +97,10 @@ Setup scripts and notes for configuring a Linux development environment.
 ## Current Focus
 
 - Developer tooling and CLI design
+- Desktop application architecture and cross-platform UX
+- Release validation and review automation
 - CI/CD and build pipeline design
 - Static analysis and code quality improvement
-- Linux fundamentals and system-level understanding
 
 ---
 
@@ -113,6 +114,7 @@ Setup scripts and notes for configuring a Linux development environment.
 ### Frameworks / Platforms
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat&logo=dotnet&logoColor=white)
 ![.NET MAUI](https://img.shields.io/badge/.NET%20MAUI-512BD4?style=flat&logo=dotnet&logoColor=white)
+![Avalonia](https://img.shields.io/badge/Avalonia-Desktop-8B44AC)
 
 ### Databases
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
