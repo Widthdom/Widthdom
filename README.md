@@ -23,9 +23,11 @@ A CLI tool that indexes large codebases into a SQLite database for fast search �
 - Incremental indexing — only re-indexes changed files
 - 25+ languages supported (C#, Python, TypeScript, Go, Rust, Java, etc.)
 - MCP server for AI tools (Claude Code, Cursor, Windsurf, GitHub Copilot)
+- Read-only LSP lookup for editor integrations
 - JSON output for programmatic access
 
-```
+```bash
+brew install widthdom/tap/codeindex
 dotnet tool install -g cdidx
 ```
 
@@ -50,10 +52,11 @@ dotnet tool install -g nildiff
 
 ---
 
-## NuGet Packages
+## Packages / Install Channels
 
 | Package | Description |
 |---------|-------------|
+| [widthdom/tap/codeindex](https://github.com/Widthdom/homebrew-tap/blob/main/Formula/codeindex.rb) | Homebrew formula that installs the `cdidx` CLI |
 | [cdidx](https://www.nuget.org/packages/cdidx) | Code indexing & search CLI tool |
 | [nildiff](https://www.nuget.org/packages/nildiff) | Folder diff & release validation CLI tool |
 | [FolderDiffIL4DotNet.Core](https://www.nuget.org/packages/FolderDiffIL4DotNet.Core) | Core library — file comparison, Myers diff, PE/CLR detection |
@@ -132,6 +135,7 @@ Setup scripts and notes for configuring a Linux development environment.
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
 ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=gitlab&logoColor=white)
+![Homebrew](https://img.shields.io/badge/Homebrew-FBB040?style=flat&logo=homebrew&logoColor=black)
 ![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)
 
 ### Environment
